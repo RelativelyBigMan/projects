@@ -1,0 +1,44 @@
+<html>
+    <header>
+        <button class="btnAtTop" id="cachedPasswords">Cached Passwords</button>
+        <button class="btnAtTop" id="addPassword">Add a Password</button>
+
+    </header>
+  <body>
+    <div class="choiceWrapper">
+
+        <label> Include Numbers</label>
+        <input type="checkbox" id="includeNumber" checked >
+        <label>( e.g. 123456 )</label><br>
+
+        <label> Include Lowercase Characters:</label>
+        <input type="checkbox" id="includeLowerChars" checked>
+        <label>( e.g. abcdefgh )</label><br>
+
+        <label> Include Uppercase Characters:</label>
+        <input type="checkbox" id="includeUpperChars" checked>
+        <label>( e.g. ABCDEFGH )</label><br>
+
+        <label>Begin With A Letter:</label>
+        <input type="checkbox" id="beginLetter">
+        <label>(don't begin with a number or symbol)</label><br>
+        
+        <label>Quantity:</label>
+        <input type="text" id="Quantity" placeholder="5">
+        <label>(don't begin with a number or symbol)</label><br>
+
+        <label>Size:</label>
+        <input type="text" id="size" placeholder="10">
+        <br>
+        <br>
+
+    <button id="passwordGenerate">Generate Password</button>
+
+    </div>
+
+    <div class="passwordWrapper" id="password">
+      
+    </div>
+  </body>
+  <script src="passwordGenerator.js"></script>
+</html>
